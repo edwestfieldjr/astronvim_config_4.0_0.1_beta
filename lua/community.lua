@@ -85,41 +85,41 @@ return {
   },
 
   { import = "astrocommunity.color.ccc-nvim" },
-  {
-    "uga-rosa/ccc.nvim",
-    init = function()
-      local ccc = require "ccc"
-      local mapping = ccc.mapping
-      ccc.setup {
-        opts = {
-          -- Your preferred settings
-          -- Example: enable highlighter
-          lsp = true,
-          highlighter = {
-            auto_enable = true,
-          },
-          pickers = {
-            ccc.picker.hex,
-            ccc.picker.css_rgb,
-            ccc.picker.css_hsl,
-            ccc.picker.css_hwb,
-            ccc.picker.css_lab,
-            ccc.picker.css_lch,
-            ccc.picker.css_oklab,
-            ccc.picker.css_oklch,
-            ccc.picker.css_name,
-          },
-          convert = {
-            { ccc.picker.hex, ccc.output.css_rgb },
-            { ccc.picker.css_rgb, ccc.output.hex },
-          },
-          mappings = {
-            ["<Esc>"] = mapping.quit,
-          },
-        },
-      }
-    end,
-  },
+  -- {
+  --   "uga-rosa/ccc.nvim",
+  --   init = function()
+  --     local ccc = require "ccc"
+  --     local mapping = ccc.mapping
+  --     ccc.setup {
+  --       opts = {
+  --         -- Your preferred settings
+  --         -- Example: enable highlighter
+  --         lsp = true,
+  --         highlighter = {
+  --           auto_enable = true,
+  --         },
+  --         pickers = {
+  --           ccc.picker.hex,
+  --           ccc.picker.css_rgb,
+  --           ccc.picker.css_hsl,
+  --           ccc.picker.css_hwb,
+  --           ccc.picker.css_lab,
+  --           ccc.picker.css_lch,
+  --           ccc.picker.css_oklab,
+  --           ccc.picker.css_oklch,
+  --           ccc.picker.css_name,
+  --         },
+  --         convert = {
+  --           { ccc.picker.hex, ccc.output.css_rgb },
+  --           { ccc.picker.css_rgb, ccc.output.hex },
+  --         },
+  --         mappings = {
+  --           ["<Esc>"] = mapping.quit,
+  --         },
+  --       },
+  --     }
+  --   end,
+  -- },
   { import = "astrocommunity.code-runner.overseer-nvim" },
   {
     "stevearc/overseer.nvim",
