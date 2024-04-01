@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- Customize Mason plugins
 
@@ -12,6 +12,22 @@ return {
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "lua_ls",
+        "rust_analyzer",
+        "tsserver",
+        "clangd",
+        "html",
+        "htmx",
+        "cssls",
+        "tailwindcss",
+        "pyright",
+        "jsonls",
+        "marksman",
+        "sqlls",
+        "prismals",
+        "zls",
+        "yamlls",
+        "dockerls",
+        "gopls",
         -- add more arguments for adding more language servers
       })
     end,
@@ -23,8 +39,15 @@ return {
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
-        "prettier",
+        -- "prettier",
+        "prettierd",
         "stylua",
+        "djlint",
+        "autopep8",
+        "markdownlint",
+        "ts-standard",
+        "sqlfmt",
+        "clang-format",
         -- add more arguments for adding more null-ls sources
       })
     end,
