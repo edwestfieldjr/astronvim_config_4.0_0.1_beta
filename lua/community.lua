@@ -85,6 +85,7 @@ return {
   },
 
   { import = "astrocommunity.color.ccc-nvim" },
+  -- CUSTOM CONFIG NOT WORKING - 01-APR-2024
   -- {
   --   "uga-rosa/ccc.nvim",
   --   init = function()
