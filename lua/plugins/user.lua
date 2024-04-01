@@ -98,10 +98,7 @@ return {
     "barrett-ruth/live-server.nvim",
     build = "npm i -g live-server",
     ft = { "html", "css", "javascript" },
-    init = function()
-      vim.keymap.set("n", "=", ":LiveServerStart<CR>", { desc = "Start Live Server" })
-      vim.keymap.set("n", "<C-=>", ":LiveServerStop<CR>", { desc = "Stop Live Server" })
-    end,
+    init = function() vim.keymap.set("n", "=", ":LiveServerToggle<CR>", { desc = "Start Live Server" }) end,
     config = function() require("live-server").setup() end,
   },
 
