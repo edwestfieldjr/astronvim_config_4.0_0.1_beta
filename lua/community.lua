@@ -136,4 +136,6 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.go" },
+  --
+  { import = "astrocommunity.lsp.lsp-inlayhints-nvim" },
 }
