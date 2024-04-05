@@ -43,6 +43,7 @@ return {
         "prettierd",
         "stylua",
         "djlint",
+        "rust_analyzer",
         "autopep8",
         "markdownlint",
         "ts-standard",
@@ -59,6 +60,14 @@ return {
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "python",
+        "c",
+        "cpp",
+        "rust",
+        "typescript",
+        "javscript",
+        "go",
+        "sql",
+        "zig",
         -- add more arguments for adding more debuggers
       })
     end,

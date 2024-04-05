@@ -127,4 +127,5 @@ return {
     opts = {},
   },
   { import = "astrocommunity.pack.pkl" }, -- import/override with your plugins folder
+  { import = "astrocommunity.lsp.lsp-inlayhints-nvim" },
 }
